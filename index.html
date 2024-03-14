@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline JavaScript Buttons</title>
+</head>
+<body>
+
+
+<!-- Button 1: Even or Odd Check -->
+
+
+<div id="content">
+    <p id="paragraph">Web development is the building and maintenance of websites; it’s the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience.
+
+        Web developers, or ‘devs’, do this by using a variety of coding languages. The languages they use depends on the types of tasks they are preforming and the platforms on which they are working.
+        
+        Web development skills are in high demand worldwide and well paid too – making development a great career option. It is one of the easiest accessible higher paid fields as you do not need a traditional university degree to become qualified.</p>
+    <button onclick="SearchButton()">Search</button>
+  </div>
+ 
+
+
+<script>
+// Function to check if the input number is even or odd
+function SearchButton() {
+
+     // Ask the user to input a search term
+     var searchTerm = prompt("Enter  word to search:");
+
+// Get the paragraph text content
+var paragraphText = document.getElementById('paragraph').textContent;
+
+// Check if the search term is found in the paragraph text
+if (paragraphText.includes(searchTerm)) {
+    alert("Text Found");
+} else {
+    alert("Text Not Found");
+}
+    
+}
